@@ -8,3 +8,10 @@ function generateRandomNumbers(num) {
   }
   return randomNumbers;
 }
+
+setTimeout(function () {
+  instructionsEl.innerText =
+    "Inserisci i numeri che ricordi e controlla quanti ne hai indovinati";
+  numberListEl.classList.replace("d-flex", "d-none");
+  formEl.classList.remove("d-none");
+}, 3000);
