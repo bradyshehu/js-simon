@@ -8,5 +8,11 @@
 const numberListEl = document.getElementById("numbers-list");
 
 const randomNumbers = generateRandomNumbers(5);
-
 console.table(randomNumbers);
+// stampo in pagina i numeri randomici
+
+for (i = 0; i < randomNumbers.length; i++) {
+  const li = document.createElement("li");
+  li.append(randomNumbers[i]);
+  numberListEl.appendChild(li);
+}
